@@ -21,8 +21,6 @@ function Comment()
             url: "https://hacker-news.firebaseio.com/v0/item/"+data.kids[i]+".json",
             success: function(data2)
             {
-              console.log(data2)
-
               //time
               var currentInSeconds = Math.floor(Date.now() / 1000);
               var ago = currentInSeconds - data2.time;
