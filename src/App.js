@@ -20,6 +20,8 @@ function Home()
             {
               var url;
               var time;
+              var link;
+              var comment;
 
               //url
               if(data2.url)
@@ -56,8 +58,19 @@ function Home()
               {
                 time =  minutes + " minutes ago";
               }
+              console.log(data2);
+              if(data2.descendants)
+              {
+                link = "href='/comments?id="+data2.id+"'";
+                comment = data2.descendants;
+              }
+              else
+              {
+                link = "";
+                comment = 0;
+              }
 
-              $("ol").append("<li><table><tr><td><img width='10' src='triangle.svg'></td><td><a href='"+data2.url+"' class='title'>" + data2.title + "</a>" + url + "</td></tr><tr><td></td><td class='minorTitle'>"+data2.score+" points by "+data2.by+" "+time+" | hide | <a class='link' href='/comments?id="+data2.id+"'>"+data2.descendants+" comments</td></tr></table></li>");
+              $("ol").append("<li><table><tr><td><img width='10' src='triangle.svg'></td><td><a href='"+data2.url+"' class='title'>" + data2.title + "</a>" + url + "</td></tr><tr><td></td><td class='minorTitle'>"+data2.score+" points by "+data2.by+" "+time+" | hide | <a class='link' "+link+">"+comment+" comments</td></tr></table></li>");
             }
           });
         }

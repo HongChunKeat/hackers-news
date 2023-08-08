@@ -82,6 +82,7 @@ ol li
 {
   text-decoration: none;
   color: grey;
+  cursor: pointer;
 }
 
 .link:hover
