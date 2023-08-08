@@ -104,8 +104,8 @@ function App()
         <a href='/' className='login'>login</a>
 			</header>
 			<Routes>
-				<Route exact path='/' exact element={<Home />} />
-				<Route exact path='/comments' exact element={<Comment />} />
+				<Route path='/' element={<Home />} />
+				<Route path='/comments' element={<Comment />} />
 			</Routes>
 		</Router>
 	);
