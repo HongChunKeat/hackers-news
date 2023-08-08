@@ -58,7 +58,7 @@ function Home()
               {
                 time =  minutes + " minutes ago";
               }
-              console.log(data2);
+              
               if(data2.descendants)
               {
                 link = "href='/comments?id="+data2.id+"'";
