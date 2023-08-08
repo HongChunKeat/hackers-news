@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.head
+{
+  display:flex;
+  background-color: rgb(255,69,0);
+  padding: 3px;
+}
+
+.ybox
+{
+  border: 1px solid white;
+  color: white;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+.homelink
+{
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.homenav
+{
+  margin-left: 20px;
+}
+
+.homenav a, .login
+{
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  margin: 0 6px;
+}
+
+.login
+{
+  margin-left: auto;
+}
+
+ol li
+{
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: grey;
+}
+
+.title
+{
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.url
+{
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.minorTitle
+{
+  font-size: 11px;
+}
+
+.link
+{
+  text-decoration: none;
+  color: grey;
+}
+
+.link:hover
+{
+  text-decoration: underline;
+}
+
+.minorComment
+{
+  font-size: 13px;
+  color: grey;
+}
+
+.commentOL
+{
+  list-style-type: none;
+}
+
+.commentOL li
+{
+  margin-left: -20px;
+}
+
+.commentText
+{
+  font-size: 13px;
+  color: black;
+}
